@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of Two numbers</title>
+</head>
+<body>
+    <input type="text" id="add1">
+    <input type="text" id="add2">
+    <button id="add">Add</button>
+    <p id="sum"></p>
+</body>
+<script>
+
+    c = document.getElementById("add");
+    c.addEventListener("click",function(){
+        a = document.getElementById("add1");  
+    b = document.getElementById("add2");
+    let f = parseInt(a.value);
+    let g = parseInt(b.value);
+        d = f + g;
+        document.getElementById("sum").innerHTML = d;
+    })
+</script>
+</html>
